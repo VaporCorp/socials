@@ -1,0 +1,31 @@
+html {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth; }
+
+body * {
+    margin:0;
+    padding: 0;
+}
+
+.logo {
+    width: 60%;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.carousel {
+  height: 100vh;
+  /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+    .carousel-item {
+        filter: blur(2px) brightness(50%);
+    }
+}
+
+/* .content-block{
+    scroll-snap-align: start;
+} */
